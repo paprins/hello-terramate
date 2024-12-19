@@ -1,4 +1,4 @@
-generate_hcl "backend.tf" {
+generate_hcl "__backend.tf" {
   condition = tm_alltrue([
     tm_can(tm_try(global.terraform.backend.azurerm, false)),
     !tm_contains(terramate.stack.tags, "no-backend")
