@@ -21,4 +21,6 @@ globals "terraform" "backend" "azurerm" {
   resource_group_name  = "rg-terraform"
   storage_account_name = "stterraform4201ca9cd363"
   container_name       = "tfstate"
+  tenant_id            = "3931e888-e773-4eae-9940-71877052cb65"
+  subscription_id      = "a23c2bbf-423f-4f16-94d9-15a103d6a7e7"
 }
