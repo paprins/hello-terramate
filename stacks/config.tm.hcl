@@ -9,6 +9,7 @@ globals "terraform" "providers" "azurerm" {
   version  = "~> 4.0"
   features = {}
   config = {
+    subscription_id = "a23c2bbf-423f-4f16-94d9-15a103d6a7e7"
     resource_provider_registrations = "extended"
   }
 }
