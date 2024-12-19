@@ -7,5 +7,6 @@ terraform {
     resource_group_name  = "rg-terraform"
     storage_account_name = "stterraform4201ca9cd363"
     use_azuread_auth     = true
+    use_oidc             = true
   }
 }

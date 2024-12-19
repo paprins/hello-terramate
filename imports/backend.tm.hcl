@@ -12,6 +12,7 @@ generate_hcl "__backend.tf" {
         container_name       = tm_try(global.terraform.backend.azurerm.container_name, "tfstate")
         key                  = "terraform/stacks/by-id/${terramate.stack.id}/terraform.tfstate"
         use_azuread_auth     = true
+        use_oidc             = true
       }
     }
   }
